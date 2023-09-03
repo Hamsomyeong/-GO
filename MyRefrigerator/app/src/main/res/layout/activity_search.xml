@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:id="@+id/tx_search"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tx_search"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tx_search"
+        android:hint="메뉴" />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/et_search"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toRightOf="@id/et_search"
+        android:background="#FFFFFF"
+        android:onClick="search_onClick"
+        android:src="@drawable/ic_baseline_search_24" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/et_search"
+        android:layout_margin="20dp"
+        android:id="@+id/list_recomsearch"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:text="WebSite"
+        android:layout_below="@id/list_recomsearch"
+        android:id="@+id/title"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/title"
+        android:layout_margin="20dp"
+        android:id="@+id/list_websearch"/>
+
+</RelativeLayout>

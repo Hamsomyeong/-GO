@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/total1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:id="@+id/total">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="410dp"
+            android:layout_height="690dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="-50dp"
+            app:lottie_fileName="furtune.json" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="508dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="123dp"
+            android:layout_marginBottom="248dp"
+            android:src="@drawable/furtune1"
+            android:id="@+id/emg"/>
+
+        // android:scaleType="fitXY"
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/among"
+            android:layout_width="wrap_content"
+            android:layout_height="452dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="-184dp"
+            android:layout_marginBottom="-2dp"
+            android:rotationY="180"
+            app:lottie_fileName="amongus.json" />
+
+        <ImageView
+            android:id="@+id/shadow"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="383dp"
+            android:layout_marginRight="158dp"
+            android:layout_marginBottom="86dp"
+            android:scaleType="fitXY"/>
+           // android:src="@drawable/shadow"
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

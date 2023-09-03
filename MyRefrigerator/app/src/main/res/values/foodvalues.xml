@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnerArray">
+
+        <item> 종류를 선택하세요. </item>
+
+        <item> 육류 </item>
+
+        <item> 채소 </item>
+
+        <item> 생선 </item>
+
+        <item> 과일 </item>
+
+        <item> 소스 </item>
+
+        <item> 음료 </item>
+
+        <item> 냉동 </item>
+
+    </string-array>
+
+</resources>

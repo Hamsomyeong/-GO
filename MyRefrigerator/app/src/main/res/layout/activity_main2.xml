@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2300FFF7"
+    tools:context=".MainActivity2"
+    android:id="@+id/total">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/search_white"
+        android:background="#5AECFF"
+        android:id="@+id/btn_seaech"
+        android:onClick="search_Click"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_seaech"
+        android:layout_alignBottom="@+id/btn_seaech"
+        android:src="@drawable/refrigerator"
+        android:background="#91FFBD"
+        android:onClick="my_refrigerator_onClick"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_seaech"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#B4FFFF00"
+        android:src="@drawable/basket_1"
+        android:onClick="memo_click"
+        android:id="@+id/btn_memo"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_memo"
+        android:layout_margin="30dp"
+        android:id="@+id/list"/>
+
+
+
+</RelativeLayout>
